@@ -1,0 +1,22 @@
+.gnzs-amo--input{
+    border: 1px solid #dbdedf;
+    border-radius: 3px;
+    font-size: 15px;
+    height: 36px;
+    padding: 7px 9px 7px;
+    box-sizing: border-box;
+    color: #313942;
+    background: #fff;
+    user-select: text;
+    outline: 0;
+    line-height: 20px;
+    -moz-appearance: textfield;
+
+    // скрываем стрелки у инпута с type=number
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        //display: none;
+        -webkit-appearance: none;
+        margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+    }
+}

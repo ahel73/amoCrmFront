@@ -1,0 +1,86 @@
+@import "./gnzs-modules/gnzs-modules.scss";
+
+/* Стили в настройках виджета */
+.gnzs-another-leads-widget{
+
+    &__link{
+        color: #4d85e6;
+    }
+
+    &__messangers-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__contact-elem{
+        display: inline-flex;
+        align-items: center;
+        color: black;
+        opacity: 0.6;
+    }
+    &__contact-elem:hover{
+        opacity: 1;
+        transition: opacity 0.3s;
+    }
+    &__messangers-container &__contact-elem{
+        flex-direction: column;
+        font-size: 12px;
+        margin-right: 15px;
+    }
+
+    &__messangers-container &__icon{
+        width: 20px;
+        height: 23px;
+    }
+    &__status-content &__icon{
+        height: 30px;
+    }
+
+    &__status-content &__messangers-container{
+        margin-top: 10px;
+    }
+
+    &__contacts-container{
+        display: flex;
+        justify-content: space-around;
+    }
+    &__messangers-container-title{
+        flex-basis: 100%;
+        color: gray;
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+    &__contacts-container &__icon{
+        width: 13px;
+        margin-right: 5px;
+    }
+    &__footer{
+        margin-top: 40px;
+        border-top: 1px solid #d3d7d8;
+        padding-top: 20px;
+    }
+
+
+    &__company-links{
+        display: flex;
+        align-items: flex-end;
+        margin-top: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #d3d7d8;
+    }
+
+    &__market-link-container{
+        font-size: 13px;
+        width: 200px;
+        margin-left: auto;
+        text-align: right;
+        padding-left: 15px;
+        box-sizing: border-box;
+        border-left: 1px solid #d3d7d8;
+
+        a{
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+}

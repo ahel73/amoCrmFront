@@ -1,0 +1,23 @@
+{
+    "modules": {
+      "vue": "https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js",
+      "vuex": "https://cdnjs.cloudflare.com/ajax/libs/vuex/3.5.1/vuex.min.js",
+      "axios": "https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"
+    },
+    "submodules": {
+    },
+    "builtins": [
+      "jquery",
+      "backbone",
+      "underscore",
+      "moment",
+      "twig",
+      "twigjs",
+      "clipboard",
+      "lib/components/base/modal",
+      "lib/common/fn",
+      "lib/components/base/confirm"
+    ],
+    "styles": ["./widget.css"]
+  }
+  

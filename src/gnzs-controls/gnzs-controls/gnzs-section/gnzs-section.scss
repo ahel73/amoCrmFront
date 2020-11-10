@@ -1,0 +1,30 @@
+.gnzs-amo--section{
+    background: #fff;
+    padding: 18px 18px 29px;
+    border-radius: 3px;
+    box-shadow: 0 2px 1px 0 #ededed;
+    margin-bottom: 20px;
+
+    &__header-wrapper{
+        display: flex;
+        margin-bottom: 4px;
+        align-items: center;
+    }
+
+    &__header{
+        color: #131420;
+        font-size: 18px;
+        margin-right: 17px;
+    }
+
+    &__description{
+        width: 100%;
+        color: #92989b;
+        font-size: 15px;
+    }
+
+    &__body{
+        width: 100%;
+        margin-top: 15px;
+    }
+}

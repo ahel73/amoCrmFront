@@ -1,0 +1,145 @@
+.gnzs-pay-modal{
+    &__container{
+        .modal-body{
+            width: 600px;
+            display: flex;
+        }
+    }
+
+    &__title{
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    &__subtitle{
+        margin-bottom: 15px;
+    }
+
+    &__price-container{
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 15px;
+    }
+
+    &__price-value{
+        font-size: 30px;
+        font-weight: bold;
+        color: #158fd2;
+    }
+
+    &__price-description{
+        color: #adadad;
+        margin-left: 5px;
+    }
+
+    &__form{
+        &-row{
+            margin-bottom: 10px;
+        }
+
+        &-title{
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        &-button{
+            margin-bottom: 15px;
+        }
+
+        &-error{
+            display: none;
+            font-size: 13px;
+            color: #ff4949;
+            margin-top: 5px;
+
+            &_showed{
+                display: block;
+            }
+        }
+    }
+
+    &__personal-dala{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    &__info-container{
+        display: flex;
+        flex-direction: column;
+        margin: -30px -30px -30px 20px;
+        padding: 30px;
+        background: #f0f0f0;
+        width: 40%;
+        font-size: 13px;
+    }
+
+    &__question{
+        font-size: 15px;
+        margin-bottom: 20px;
+        opacity: 0.6;
+    }
+
+    &__info-table{
+        td:first-child{
+            padding: 2px 5px 2px 0;
+        }
+
+        a{
+            color: #1375ab;
+        }
+    }
+    
+
+    &__company-title{
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+    &__company-name{
+        line-height: 12px;
+        font-weight: bold;
+        font-size: 13px;
+        margin-left: 5px;
+    }
+
+    &__messangers-container{
+        display: flex;
+        margin-top: 15px;
+    }
+
+    &__messanger-elem{
+        display: flex;
+        width: 20px;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        margin-right: 10px;
+        color: #716c6c;
+        transition: color 0.2s;
+
+        &:hover{
+            color: black;
+        }
+    }
+
+    &__messanger-icon{
+        width: 20px;
+        height: 18px;
+    }
+
+
+    &__all-widgets-button{
+        display: flex; 
+        margin-top: auto;
+        color: #1375ab;
+
+        svg{
+            width: 18px;
+            margin-right: 3px;
+        }
+    }
+
+
+}

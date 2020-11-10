@@ -1,0 +1,16 @@
+.js-gnzs-settings-token-button{
+	float: right;
+    margin-left: 5px;
+}
+.js-gnzs-settings-token-button[disabled] {
+    cursor: not-allowed;
+}
+
+.gnzs-settings-token-button_not_value {
+    color: #ffffff;
+    background: #ff7779
+}
+
+.gnzs-settings-token-button_not_value:hover {
+    background: #ff7779
+}

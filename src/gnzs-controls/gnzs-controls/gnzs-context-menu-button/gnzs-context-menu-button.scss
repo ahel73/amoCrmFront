@@ -1,0 +1,57 @@
+.gnzs-amo--context-menu-button{
+    display: flex;
+    height: 15px;
+    padding: 5px;
+    align-items: center;
+    background: transparent;
+    cursor: pointer;
+
+    &__container{
+        position: relative;
+    }
+
+    &__container_opened &__menu{
+        display: block;
+    }
+
+    &:active{
+        transform: translateY(1px);
+    }
+
+    &__icon{
+        width: 13px;
+        height: 3px;
+    }
+
+    &__menu{
+        display: none;
+        background: white;
+        border: 1px solid #dfdfdf;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        z-index: 10;
+    }
+
+    &__menu-item{
+        display: flex;
+        cursor: pointer;
+        background: #fff;
+        font-weight: 400;
+        white-space: nowrap;
+        min-width: 105px;
+        padding: 0 15px;
+        line-height: 40px;
+        align-items: center;
+
+        &:hover{
+            background: #f3f3f3;
+        }
+    }
+
+    &__menu-item-icon{
+        width: 13px;
+        height: 13px;
+        margin-right: 6px;
+    }
+}

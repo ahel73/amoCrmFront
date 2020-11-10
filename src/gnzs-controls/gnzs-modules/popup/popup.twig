@@ -1,0 +1,29 @@
+<div class="nav__notifications__bar-genezis">
+    {% if isClosing %}
+        <i class="material-icons genezis-notification-close">✖</i>
+    {% endif %}
+    <div class="nav__notifications__bar__inner-genezis block-merz block-{{ type }}-merz" style="background:#1b3446">
+        <div class="genezis-notification-image">
+            <div
+                class="genezis-logo"
+                {% if bgImage %}
+                    style="background-image: url({{ bgImage }});"
+                {% endif %}
+            >
+            </div>
+        </div>
+        <div class="nav__notifications__bar__text-genezis">
+            <div style="color:white">
+                <p style="font-weight:bold">{{ title }}</p>
+                <p style="color: #ced0d2">{{ text }}</p>
+            </div>
+        </div>
+        {% if isButtonEnabled %}
+            <div class="nav__notifications__bar__btn_block-genezis">
+                <a class="notification__genezis-button" href="#">
+                    {{ buttonText }}
+                </a>
+            </div>
+        {% endif %}
+    </div>
+</div>

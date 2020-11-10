@@ -1,0 +1,41 @@
+.gnzs-amo--switcher{
+    display: inline-flex;
+
+    &__helper{
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 28px;
+        position: relative;
+        border: 0;
+        background: #516570;
+        height: 1px;
+        width: 23px;
+        overflow: visible;
+        top: -4px;
+
+        &::before{
+            content: '';
+            border-radius: 50%;
+            position: absolute;
+            box-sizing: border-box;
+            left: -1px;
+            border: 1px solid #516570;
+            background: #fff;
+            width: 15px;
+            height: 15px;
+            top: -7px;
+            box-shadow: none;
+        }
+    }
+
+    &__checkbox{
+        display: none;
+    }
+
+    &__checkbox:checked+&__helper::before{
+        left: unset;
+        right: -1px;
+        background: #4c8bf7;
+        border-color: #4c8bf7;
+    }
+}

@@ -1,0 +1,52 @@
+.gnzs-amo--table{
+    display: table;
+
+    &__header{
+        display: table-header-group;
+        background: #fff;
+    }
+
+    &__body{
+        display: table-row-group;
+    }
+
+    &__row{
+        display: table-row;
+        position: relative;
+    }
+
+    &__cell{
+        display: table-cell;
+        padding: 12px 10px;
+        font-size: 15px;
+        line-height: 19px;
+        min-width: 120px;
+        margin: 0;
+        border-top: 1px solid #f1f1f1;
+        vertical-align: top;
+        position: relative;
+        color: #313942;
+        box-sizing: border-box;
+    }
+
+    &__header &__cell{
+        position: relative;
+        color: rgba(133,145,165,.6);
+        font-family: 'PT Sans Caption','Arial Black',sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        white-space: nowrap;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        line-height: 19px;
+        height: 42px;
+        box-sizing: border-box;
+        overflow: hidden;
+        border: 1px solid #e5e5e5;
+        border-left: none;
+
+        &:first-child{
+            border-left: 1px solid #e5e5e5;
+        }
+    }
+}

@@ -1,0 +1,67 @@
+<template>
+    <ol class="responsible">
+        <template v-for="(group, index)  in groups">
+            <li 
+                v-if="group.id != 'group_free_users' && group.managers.length" 
+                :key="index"
+                class="js_block_group"
+            >
+                <gnzs-checkbox 
+                    name="group"
+                    :value="group.id"
+                    :label="group.name"
+                    :checked="group.isChecked"
+                    :click_ev="selectGroup"
+                    :class_par="{js_group : true}"
+                />
+                <ol>
+                    <li 
+                        v-for="(work, index2 ) in group.managers" 
+                        :key="index2" 
+                    >
+                        <gnzs-checkbox 
+                            name="work"
+                            :value="work.id"
+                            :label="work.name"
+                            :checked="work.isChecked"
+                            :click_ev="selectWork"
+                        />
+                    </li>
+                </ol>
+            </li>
+        </template>
+    </ol>
+</template>
+
+<script>
+import gnzsCheckbox from "../gnzs-controls/gnzs-checkbox/gnzs-checkbox";
+export default {
+    props: ['groups', 'selectGroup', 'selectWork'],
+    components: {
+        gnzsCheckbox
+    },
+}
+</script>
+
+<style   lang="scss" >
+    ol{
+        list-style-type: none;
+    }
+    li ol{
+        margin-left: 30px;
+    }
+    .responsible{
+        border: 1px solid #d4d5d8;
+        padding: 25px 10px;
+        max-height: 300px;
+        overflow: auto;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    li{
+        padding: 3px 0;
+    }
+    .responsible > li:last-child{
+        margin-bottom: 20px;
+    }
+</style>
